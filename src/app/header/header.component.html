@@ -1,0 +1,38 @@
+<mat-sidenav-container [class.open-sp-menu]="sidenav.opened">
+  <mat-toolbar>
+    <a mat-button class="blogTitle" routerLink="/">
+      <span>Mokeen</span>
+    </a>
+    <!-- SP表示 -->
+    <div fxShow="true" fxHide.gt-sm="true" class="menu-button">
+      <div mat-icon-button (click)="sidenav.toggle()" class="button">
+        <mat-icon class="icon">menu</mat-icon>
+      </div>
+    </div>
+    <!-- PC表示 -->
+    <div
+      fxLayoutAlign="center"
+      fxLayoutGap="20px"
+      fxShow="true"
+      fxHide.lt-md="true"
+      class="pc-menu"
+    >
+      <a mat-button routerLink="/">トップ</a>
+      <a mat-button routerLink="/">ランキング</a>
+      <a mat-button routerLink="/">新着記事</a>
+      <a mat-button routerLink="/">検索</a>
+    </div>
+  </mat-toolbar>
+  <!-- SP表示時のサイドナビ -->
+  <mat-sidenav #sidenav position="end">
+    <div fxLayout="column" fxLayoutGap="5px">
+      <div mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="icon close-button">close</mat-icon>
+      </div>
+      <a href="">トップ</a>
+      <a href="">ランキング</a>
+      <a href="">新着記事</a>
+      <a href="">検索</a>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>

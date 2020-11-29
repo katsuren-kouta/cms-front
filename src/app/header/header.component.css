@@ -1,0 +1,74 @@
+/* 共通 */
+* {
+  color: #707070;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+mat-toolbar {
+  background-color: white;
+}
+
+.blogTitle {
+  font-size: 150%;
+}
+
+/* sp */
+mat-sidenav-container {
+  width: 100%;
+  position: fixed;
+}
+
+mat-sidenav {
+  width: 50%;
+}
+
+mat-sidenav a {
+  font-size: 130%;
+  margin-left: 20px;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.button {
+  border-style: none;
+  background-color: transparent;
+}
+
+.menu-button {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
+
+.close-button {
+  color: red;
+  margin-top: 5px;
+  margin-right: 25px;
+  float: right;
+}
+
+/* サイドナビ開閉時、高さを強制的に高くする。
+これがないと、サイドナビの高さが、メニューバーと同じ高さになってしまう */
+.open-sp-menu {
+  height: 1000px;
+}
+
+/* pc */
+@media screen and (min-width: 1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+  .pc-menu {
+    width: 80%;
+  }
+}
