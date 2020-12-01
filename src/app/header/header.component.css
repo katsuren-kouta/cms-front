@@ -1,7 +1,6 @@
 /* 共通 */
 * {
   color: #707070;
-  box-sizing: border-box;
 }
 
 *:focus {
@@ -26,6 +25,7 @@ mat-toolbar {
 mat-sidenav-container {
   width: 100%;
   position: fixed;
+  top: 0;
 }
 
 mat-sidenav {

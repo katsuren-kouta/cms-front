@@ -1,1 +1,16 @@
-<p>headline works!</p>
+<div class="headline" fxLayout>
+  <div class="left">
+    <a class="image" href=""></a>
+    <ng-container *ngIf="rank">
+      <span class="rank">1</span>
+    </ng-container>
+  </div>
+  <div class="right">
+    <div class="headline-title">
+      <span>タイトル</span>
+    </div>
+    <div class="headline-date">
+      <span>0000/00/00</span>
+    </div>
+  </div>
+</div>

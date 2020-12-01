@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadlineComponent implements OnInit {
 
+  rank:boolean;
   constructor() { }
 
   ngOnInit(): void {
+    this.rank = false;
   }
 
 }

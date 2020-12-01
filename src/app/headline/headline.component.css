@@ -1,0 +1,48 @@
+.headline {
+  margin-top: 100px;
+}
+
+.left {
+  position: relative;
+}
+
+.image {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  border: red 3px solid;
+  background-image: url("C:\development\cms\front\src\app\shared\images\no_image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.rank {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+.right {
+  width: 130px;
+  height: 70px;
+}
+
+.headline-title {
+  font-size: 13px;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  padding-left: 10px;
+}
+
+.headline-date {
+  font-size: 10px;
+  width: 100%;
+  height: 10px;
+  text-align: right;
+}
