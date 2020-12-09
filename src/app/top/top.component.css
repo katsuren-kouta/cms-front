@@ -1,3 +1,43 @@
 * {
   box-sizing: border-box;
 }
+
+.main-container {
+  margin: 100px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  place-items: center;
+}
+
+.item {
+  width: 300px;
+}
+
+.item-footer {
+  float: right;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  width: 90px;
+  height: 30px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  border: solid red 1px;
+}
+@media screen and (min-width: 1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+  .new {
+    grid-column-start: 2;
+  }
+
+  .rank {
+    grid-column-start: 3;
+  }
+}

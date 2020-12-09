@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { HeadLineData } from '../shared/models/headLineData';
 
 @Component({
   selector: 'app-headline',
@@ -6,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./headline.component.css']
 })
 export class HeadlineComponent implements OnInit {
-
-  rank:boolean;
+  @Input() headLine:HeadLineData;
+  @Input() rank:number;
   constructor() { }
 
   ngOnInit(): void {
-    this.rank = false;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as constant from './shared/constant';
 
 @Component({
   selector: 'app-root',

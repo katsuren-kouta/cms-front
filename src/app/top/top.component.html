@@ -1,2 +1,32 @@
 <app-header></app-header>
-<app-headline></app-headline>
+<div class="top-wrapper">
+  <div class="main-container">
+    <div class="item new">
+      <div class="item-header">
+        <p>新着記事</p>
+      </div>
+      <div class="item-main">
+        <ng-container *ngFor="let headLine of headLines; let i = index">
+          <app-headline [headLine]="headLine"></app-headline>
+        </ng-container>
+      </div>
+      <div class="item-footer">
+        <a class="button" href="">もっと見る</a>
+      </div>
+    </div>
+    <div class="item rank">
+      <div class="item-header">
+        <p>ランキング</p>
+      </div>
+      <div class="item-main">
+        <ng-container *ngFor="let headLine of rankList; let i = index">
+          <app-headline [headLine]="headLine" [rank]="i + 1"></app-headline>
+        </ng-container>
+      </div>
+      <div class="item-footer">
+        <a class="button" href="">もっと見る</a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

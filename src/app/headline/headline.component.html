@@ -1,16 +1,20 @@
 <div class="headline" fxLayout>
   <div class="left">
-    <a class="image" href=""></a>
-    <ng-container *ngIf="rank">
-      <span class="rank">1</span>
+    <a
+      class="image"
+      href=""
+      style="background-image: url('{{ headLine.image_url }}');"
+    ></a>
+    <ng-container *ngIf="headLine.isRank">
+      <span class="rank">{{ rank }}</span>
     </ng-container>
   </div>
   <div class="right">
     <div class="headline-title">
-      <span>タイトル</span>
+      <span>{{ headLine.title }}</span>
     </div>
     <div class="headline-date">
-      <span>0000/00/00</span>
+      <span>{{ headLine.date }}</span>
     </div>
   </div>
 </div>
