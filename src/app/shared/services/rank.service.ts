@@ -12,6 +12,15 @@ export class RankService {
   }
 
   fetchNewsListTop():Observable<any>{
-    return this.http.get(NEWSLIST_URL+ '?order=rankall&limit=5');
+    return this.http.get(NEWSLIST_URL+ '?order=rankweek&limit=5');
   }
+
+  fetchNewsListWeek():Observable<any>{
+    return this.http.get(NEWSLIST_URL+ '?order=rankweek&paginate=20');
+  }
+
+  fetchNewsListAll():Observable<any>{
+    return this.http.get(NEWSLIST_URL+ '?order=rankall&paginate=20');
+  }
+
 }

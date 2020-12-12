@@ -2,13 +2,11 @@
 <div class="news-list">
   <div class="item">
     <div class="item-header">
-      <a routerLink="/ranking/week">週間</a>
-      <a routerLink="/ranking/all">総合</a>
-      <h2>{{ title }}ランキング</h2>
+      <p>新着記事</p>
     </div>
     <div class="item-main">
       <ng-container *ngFor="let headLine of headLines; let i = index">
-        <app-headline [headLine]="headLine" [rank]="i + 1"></app-headline>
+        <app-headline [headLine]="headLine"></app-headline>
       </ng-container>
     </div>
   </div>

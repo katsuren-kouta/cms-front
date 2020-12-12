@@ -21,6 +21,9 @@ import { AdminTopComponent } from './admin-top/admin-top.component';
 import { AdminNewsCreateComponent } from './admin-news-create/admin-news-create.component';
 import { AdminNewsEditComponent } from './admin-news-edit/admin-news-edit.component';
 import { AdminConfigComponent } from './admin-config/admin-config.component';
+import { MatProgressSpinnerModule, MatSpinner } from '@angular/material/progress-spinner';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { NewslistComponent } from './newslist/newslist.component';
 
 
 @NgModule({
@@ -37,7 +40,8 @@ import { AdminConfigComponent } from './admin-config/admin-config.component';
     AdminTopComponent,
     AdminNewsCreateComponent,
     AdminNewsEditComponent,
-    AdminConfigComponent
+    AdminConfigComponent,
+    NewslistComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +52,13 @@ import { AdminConfigComponent } from './admin-config/admin-config.component';
     MatSidenavModule,
     MatIconModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
+    OverlayModule
   ],
   providers: [],
+  entryComponents: [
+    MatSpinner
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

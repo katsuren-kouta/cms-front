@@ -11,12 +11,12 @@
         </ng-container>
       </div>
       <div class="item-footer">
-        <a class="button" href="">もっと見る</a>
+        <a class="button" routerLink="/newslist" fragment="head">もっと見る</a>
       </div>
     </div>
     <div class="item rank">
       <div class="item-header">
-        <p>ランキング</p>
+        <p>週間ランキング</p>
       </div>
       <div class="item-main">
         <ng-container *ngFor="let headLine of rankList; let i = index">
@@ -24,7 +24,7 @@
         </ng-container>
       </div>
       <div class="item-footer">
-        <a class="button" href="">もっと見る</a>
+        <a class="button" routerLink="/ranking/week">もっと見る</a>
       </div>
     </div>
   </div>

@@ -15,4 +15,8 @@ export class HeadlineService {
   fetchNewsListTop():Observable<any>{
     return this.http.get(NEWSLIST_URL+ '?order=new&limit=5');
   }
+
+  fetchNewsList():Observable<any>{
+    return this.http.get(NEWSLIST_URL+ '?order=new&limit=20');
+  }
 }
